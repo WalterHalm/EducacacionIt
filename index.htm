@@ -17,17 +17,18 @@
 </head>
 
 <body>
-    <section class="header">
+    <section class="header" id="inicio">
         <nav>
             <div id="logo">
                 <img src="./img/logo.png.jpeg" alt="logo">
             </div>
-            <div>
-                <ul>
-                    <li><a href="#quienessomos">Quienes Somos</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#pedido">Hace tu Pedido</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+            <div id="nav">
+                <ul id="navmedio">
+                    <li><a href="#inicio"class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                    <li><a href="#quienessomos" class="seleccionado" onclick="seleccionar(this)" >Quienes Somos</a></li>
+                    <li><a href="#galeria" class="seleccionado" onclick="seleccionar(this)">Galeria</a></li>
+                    <li><a href="#pedido" class="seleccionado" onclick="seleccionar(this)">Hace tu Pedido</a></li>
+                    <li><a href="#contacto" class="seleccionado" onclick="seleccionar(this)">Contacto</a></li>
                 </ul>
             </div>
 
@@ -36,12 +37,15 @@
             </div>
 
         </nav>
+        <div id="iconomenu" class="icono" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </section>
 
 
 
-    <header class="carousel"> 
-            
+    <header class="carousel">
+
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
@@ -76,7 +80,7 @@
                     <p class="bienvenida"> Rotiseria</p>
                     <h2>Santa Gula</h2>
                 </div>
-                
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="prev">
@@ -89,115 +93,167 @@
                 <span class="visually-hidden">Next</span>
             </button>
 
-           
-        </div>        
-       
-         
+
+        </div>
+
+
     </header>
 
-<section id="quienessomos">
-    <h1 id="titulo">Quienes Somos</h1>
+    <section id="quienessomos">
+        <h1 id="titulo">Quienes Somos</h1>
+        <span class="linea"></span>
         <div class="contenedorsomos">
             <div class="somos">
-            <img src="./img/quienessomos.png" alt="icono quienes somos">
-            <h3>Rotiseria Santa Gula</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo cum velit minus neque cupiditate
-                    </p>
+                <img src="./img/quienessomos.png" alt="icono quienes somos">
+                <h3>Rotiseria Santa Gula</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo cum velit minus neque
+                    cupiditate
+                </p>
             </div>
-        <div class="imgsomos">
-            <img src="./img/pizza1.png.JPG" alt="localfrente">
+            <div class="imgsomos">
+                <img src="./img/pizza1.png.JPG" alt="localfrente">
+            </div>
+            <div class="imgsomos">
+                <img src="./img/localinterno.png.jpg" alt="localinterno">
+            </div>
         </div>
-        <div class="imgsomos">
-            <img src="./img/localinterno.png.jpg" alt="localinterno">
-        </div>
-        </div>
-</section>
+    </section>
 
-<section id="galeria">
-    <h1 id="titulo"> Galeria de imagenes</h1>
-    <span class="linea"></span>
+    <section id="galeria">
+        <h1 id="titulo"> Galeria de imagenes</h1>
+        <span class="linea"></span>
         <div class="galeria">
-             <a href="#image1"><img src="./img/emp.png.JPG" alt="galeriadeimagenes"></a>
-             <a href="#image2"><img src="./img/hamb.png.JPG" alt="galeriadeimagenes"></a>
-             <a href="#image3"><img src="./img/pizza1.png.JPG" alt="galeriadeimagenes"></a>
-             <a href="#image4"><img src="./img/hambcheddar.png.JPG" alt="galeriadeimagenes"></a>
-             <a href="#image5"><img src="./img/pizza4.png.JPG" alt="galeriadeimagenes"></a>
-             <a href="#image6"><img src="./img/sandwmila.png.jpg" alt="galeriadeimagenes"></a>     
-     </div>
+            <a href="#image1"><img src="./img/emp.png.JPG" alt="galeriadeimagenes"></a>
+            <a href="#image2"><img src="./img/hamb.png.JPG" alt="galeriadeimagenes"></a>
+            <a href="#image3"><img src="./img/pizza1.png.JPG" alt="galeriadeimagenes"></a>
+            <a href="#image4"><img src="./img/hambcheddar.png.JPG" alt="galeriadeimagenes"></a>
+            <a href="#image5"><img src="./img/pizza4.png.JPG" alt="galeriadeimagenes"></a>
+            <a href="#image6"><img src="./img/sandwmila.png.jpg" alt="galeriadeimagenes"></a>
+        </div>
+    </section>
+
+    <article class="light-box" id="image1">
+        <a href="#image6" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/emp.png.JPG" alt="">
+        <a href="#image2" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image2">
+        <a href="#image1" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/hamb.png.JPG" alt="">
+        <a href="#image3" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image3">
+        <a href="#image2" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/pizza1.png.JPG" alt="">
+        <a href="#image4" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image4">
+        <a href="#image3" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/hambcheddar.png.JPG" alt="">
+        <a href="#image2" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image5">
+        <a href="#image5" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/pizza4.png.JPG" alt="">
+        <a href="#image2" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image6">
+        <a href="#image5" class="next"><i class="bi bi-arrow-left"></i></a>
+        <img src="./img/sandwmila.png.jpg" alt="">
+        <a href="#image1" class="next"><i class="bi bi-arrow-right"></i></a>
+        <a href="#galeria" class="close">X</a>
+    </article>
 
 
-</section>
-
-    
-   <section id="pedido">
-    
-    <div class="contenedor-pedido">
-        <h3>Casa de Comida en <span>Chajari</span></h3>
-        <button>Hace tu Pedido</button>
-
-    </div>
-
-   </section>
 
 
+    <section id="pedido">
+        
+        <h1 id="titulo"> Hacenos tu Pedido</h1>
+        <span class="linea"></span>
 
-   <section id="contacto">
-    <h3 class="titulo-seccion">Contactanos Ahora</h3>
-    <div class="left-contact">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="icon">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Ubicación</span>
+        <div class="contenedor-pedido">
+            <div><h3>Casa de Comida en <span>Chajari</span></h3>
             </div>
-            <p>
-              <span>Chajari, Argentina</span>
-            </p>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <i class="fas fa-envelope"></i>
-              <span>Email</span>
+            <div><button type="button" class="btn btn-warning">Hace tu pedido</button>
+            </div>          
+
+        </div>
+
+    </section>
+
+
+
+    <section id="contacto">        
+        <h1 id="titulo">Contactanos Ahora</h1>
+        <span class="linea"></span>
+        <div class="left-contact">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ubicación</span>
+                    </div>
+                    <p>
+                        <span>Chajari, Argentina</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                    <p>
+                        <span>santagula@gmail.com</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </div>
+                    <p>
+                        <span>3456269369</span>
+                    </p>
+                </div>
             </div>
-            <p>
-              <span>santagula@gmail.com</span>
-            </p>
-          </div>        
-        </div>        
-      </div>
-    <div class="contenedor-form">
-        <form action="https://formsubmit.co/wali.halm@gmail.com" method="POST">
-            <div class="fila mitad">
-                <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad" required>
-                <input type="email" name="email" placeholder="Direccion de Corre Electronico" class="input-mitad" required>
-            </div>
-            <div class="fila">
-                <textarea name="comments" cols="30" rows="10" placeholder="Escriba su mensaje aqui"
-                    class="input-full"></textarea>
-            </div>
-            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-        </form>
-    </div>
-</section>   
+        </div>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/wali.halm@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad" required>
+                    <input type="email" name="email" placeholder="Direccion de Corre Electronico" class="input-mitad"
+                        required>
+                </div>
+                <div class="fila">
+                    <textarea name="comments" cols="30" rows="10" placeholder="Escriba su mensaje aqui"
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
 
 
     <footer>
-        <div class="encolumnar">
-
-            <h1> Santa Gula</h1>
-            <a href="mailto: santagulachajari@gmail.com">santagulachajari@gmail.com</a>
-        </div>
+        <p>Todos los derechos reservados - 2023</p>
         <div class="redes">
-            <a href="https://www.instagram.com/rotiseriasantagula/?hl=es" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/santagularotiseria" target="_blank=" rel="noopener noreferrer"><i
-                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>            
         </div>
-
-
     </footer>
 
-
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
