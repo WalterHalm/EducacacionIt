@@ -6,8 +6,7 @@ function seleccionar(navmedio){
     opciones [1].className ="";
     opciones [2].className ="";
     opciones [3].className ="";
-    opciones [4].className ="";
-    opciones [5].className ="";                
+    opciones [4].className ="";                    
     navmedio.className = "seleccionado";
 
     
@@ -17,8 +16,6 @@ function seleccionar(navmedio){
 var x = document.getElementById("nav");
 x.className="";
 }
-
-
 
 
 
