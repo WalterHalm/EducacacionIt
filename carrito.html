@@ -38,56 +38,13 @@
         <main>
             <h2 class="titulo-principal">Carrito</h2>
                 <div class="contenedor-carrito">
-                    <p class="carrito-vacio">Tu carrito esta vacio<i class="bi bi-emoji-frown"></i></p>
+                    <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio<i class="bi bi-emoji-frown"></i></p>
 
-                    <div class="carrito-productos disabled">
-                        <div class="carrito-producto">
-                            <img class="carrito-producto-imagen" src="./img/emp.png.JPG" alt="">
-                            <div class="carrito-producto-titulo">
-                                <small>Titulo</small>
-                                <h3>Empanadas</h3>
-                            </div>
-                            <div class="carrito-producto-cantidad">
-                                <small>Cantidad</small>
-                                <p>1</p>
-                            </div>
-                            <div class="carrito-producto-precio">
-                                <small>Precio</small>
-                                <p>$1000</p>
-                            </div>
-                            <div class="carrito-producto-subtotal"> 
-                                <small>Subtotal</small>
-                                <p>$1000</p>
-                            </div>
-                            <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                        </div>
+                    <div id="carrito-productos" class="carrito-productos disabled">
+                        <!--se completa con js-->
                     </div>
-
-                    <div class="carrito-productos disabled">
-                        <div class="carrito-producto">
-                            <img class="carrito-producto-imagen" src="./img/milplato.png.JPG" alt="">
-                            <div class="carrito-producto-titulo">
-                                <small>Titulo</small>
-                                <h3>Milanesa al Plato</h3>
-                            </div>
-                            <div class="carrito-producto-cantidad">
-                                <small>Cantidad</small>
-                                <p>1</p>
-                            </div>
-                            <div class="carrito-producto-precio">
-                                <small>Precio</small>
-                                <p>$1500</p>
-                            </div>
-                            <div class="carrito-producto-subtotal"> 
-                                <small>Subtotal</small>
-                                <p>$1500</p>
-                            </div>
-                            <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                        </div>
-
-
-                    </div>
-                    <div class="carrito-acciones disabled">
+                    
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
                         <div class="carrito-acciones-izquierda">
                             <button class="carrito-acciones-vaciar">
                                 Vaciar Carrito
@@ -101,9 +58,11 @@
                             <button class="carrito-acciones-comprar">Comprar Ahora</button>
                         </div>
                     </div>
-                    <p class="carrito-comprado disabled">Muchas Gracias por tu Compra<i class="bi bi-emoji-grin"></i></p>
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas Gracias por tu Compra<i class="bi bi-emoji-grin"></i></p>
                 </div>
         </main>
     </div>
+
+    <script src="./carrito.js"></script>
 </body>
 </html>
