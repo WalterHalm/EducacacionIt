@@ -154,7 +154,9 @@ function actualizarBotonesAgregar(){
 
 //Actualizamos productos del local storage cada vez que se actualiza la pagina de pedidos
 let productosEnCarrito;
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarritoLS =  JSON.parse(localStorage.getItem("productos-en-carrito"));
+
+
 if(productosEnCarritoLS){
     productosEnCarrito = productosEnCarritoLS;
     actualizarNumerito();
