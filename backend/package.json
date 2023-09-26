@@ -1,0 +1,40 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "trabajo integrador final educacion-it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/walterhalm"
+  },
+  "keywords": [
+    "santagula",
+    "ecommerce",
+    "rotiseria",
+    "pizzas",
+    "empanadas",
+    "hamburguesas",
+    "sandwich",
+    "milanesas",
+    "comidas",
+    "comidas",
+    "para",
+    "llevar",
+    "restaurante",
+    "rico",
+    "pizzeria",
+    "chajari",
+    "rotiserias",
+    "en",
+    "chajari."
+  ],
+  "author": "walter halm",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
