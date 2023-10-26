@@ -8,7 +8,8 @@ module.exports = ()=>{
             {
                 keepAlive:true,
                 useNewUrlParser:true,
-                useUnifiedTopology: true
+                useUnifiedTopology: true,
+                useFindAndModify: false
             },
         (err)=>{
             if(err){
